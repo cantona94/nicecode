@@ -1,0 +1,47 @@
+.billet {
+  width: 366px;
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 4px 0px #3333334d;
+  background-color: #fff;
+
+  input {
+    margin-left: 14px;
+  }
+}
+
+.billet_active {
+  background-color: var(--bg-color);
+}
+
+.billet__message {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: var(--color-blue);
+}
+
+.billet__photo {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.billet__name {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.billet__status {
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  margin-left: auto;
+}

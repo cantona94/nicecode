@@ -1,0 +1,88 @@
+.notes {
+  width: 744px;
+  height: 780px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px #1e1e1e1a;
+  background-color: #fff;
+
+  &__item {
+    padding-top: 20px;
+    padding-left: 15px;
+
+    p {
+      width: 680px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    span {
+      color: #616f82;
+    }
+
+    img {
+      margin-top: 15px;
+      border-radius: 5px;
+      border: 10px solid #cdcdcd;
+    }
+
+    &_text {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+
+    &_active {
+      border-radius: 50%;
+      &:hover {
+        background-color: var(--color-blue);
+      }
+      &:hover path {
+        fill: #fff;
+      }
+    }
+
+    &_open {
+      position: absolute;
+      right: 30px;
+      top: 22px;
+      background: #ffffff;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 160px;
+      z-index: 2;
+
+      ul {
+        overflow: hidden;
+        li {
+          padding: 12px 20px;
+          cursor: pointer;
+          list-style-type: none;
+
+          &.active,
+          &:hover {
+            background: rgba(119, 118, 117, 0.05);
+          }
+
+          &.active {
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popup_active {
+  background-color: var(--color-blue);
+  path {
+    fill: #fff;
+  }
+}

@@ -1,0 +1,59 @@
+.billet__list {
+  width: 366px;
+  height: 20px;
+  margin: 15px 0;
+  padding: 0px 10px 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+}
+
+.billet__count {
+  width: 28px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 0px 4px 0px 4px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: var(--color-blue);
+}
+
+.billet__count_gray {
+  background-color: var(--btn-color);
+}
+
+.billet__item {
+  width: 374px;
+  height: 840px;
+  background-color: var(--bg-color);
+}
+
+.checkbox_count {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.select_btn {
+  border: none;
+  background-color: var(--bg-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: var(--btn-color);
+  margin-left: 10px;
+
+  &:hover {
+    color: var(--btn-active-color);
+    cursor: pointer;
+  }
+}

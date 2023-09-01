@@ -1,0 +1,58 @@
+.consultation {
+  width: 744px;
+  height: 780px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px #1e1e1e1a;
+  background-color: #fff;
+
+  &__item {
+    width: 724px;
+    height: 66px;
+    margin-bottom: 10px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+
+    &_active {
+      border: 1px solid #4198c5;
+    }
+
+    &_info {
+      margin-left: 10px;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #616f82;
+      }
+    }
+
+    &_icon {
+      margin-left: 10px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 26px;
+      margin-left: auto;
+      margin-right: 10px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: right;
+      color: red;
+    }
+  }
+}

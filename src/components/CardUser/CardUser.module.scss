@@ -1,0 +1,89 @@
+.card {
+  width: 744px;
+  height: 110px;
+  box-shadow: 0px 1px 4px 0px #1e1e1e1a;
+  background-color: #fff;
+  display: flex;
+  padding-top: 10px;
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+  }
+
+  &__info {
+    padding-top: 10px;
+    padding-left: 15px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: right;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0px;
+      text-align: right;
+    }
+  }
+
+  &__popup {
+    margin-left: auto;
+    margin-right: 12px;
+    position: relative;
+
+    &_active {
+      border-radius: 50%;
+      &:hover {
+        background-color: var(--color-blue);
+      }
+      &:hover path {
+        fill: #fff;
+      }
+    }
+
+    &_open {
+      position: absolute;
+      right: 15px;
+      top: 22px;
+      background: #ffffff;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 160px;
+
+      ul {
+        overflow: hidden;
+        li {
+          padding: 12px 20px;
+          cursor: pointer;
+          list-style-type: none;
+
+          &.active,
+          &:hover {
+            background: rgba(119, 118, 117, 0.05);
+          }
+
+          &.active {
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popup_active {
+  background-color: var(--color-blue);
+  path {
+    fill: #fff;
+  }
+}
