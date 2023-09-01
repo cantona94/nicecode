@@ -31,7 +31,7 @@ export const UserNote = () => {
             onClick={toggleVisiblePopupOne}
             className={
               visiblePopupOne
-                ? `${styles.notes__popup_active} ${styles.ac}`
+                ? `${styles.notes__popup_active} ${styles.popup_active}`
                 : styles.notes__popup_active
             }
           />
